@@ -1,2 +1,2 @@
 # dwm
-Personal fork of dwm 6.2
+Personal fork of dwm
