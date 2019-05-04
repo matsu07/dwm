@@ -10,9 +10,10 @@ depends=('libx11' 'libxinerama' 'pango')
 install=dwm.install
 source=(http://dl.suckless.org/dwm/dwm-$pkgver.tar.gz
 	dwm.desktop
-	config.h)
+	config.h
+	pertag.diff)
 
-_patches=()
+_patches=(pertag.diff)
 
 source=(${source[@]} ${_patches[@]})
 
@@ -44,4 +45,6 @@ package() {
 }
 md5sums=('9929845ccdec4d2cc191f16210dd7f3d'
          '939f403a71b6e85261d09fc3412269ee'
-         'cd7faa64f1354035615547fe8884ff41')
+         'b5479ffaccf26dc74b659ff556a621a9'
+         '31899b188639fef08753e8095f603f58'
+         '31899b188639fef08753e8095f603f58')
